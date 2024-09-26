@@ -61,8 +61,8 @@ module.exports = (options)-> new Promise (finish)->
 	## Helpers
 	## ========================================================================== 
 	getDirName = (pathParams, filePath)->
-		dirInGlob = options.glob.match(/^[^\*\/]*/)[0]
-		dirInGlob += if dirInGlob then '/' else ''
+		dirInGlob = options.glob.match(/^([^\*]*\/)/)[0]
+		dirInGlob += if (dirInGlob && dirInGlob.slice(-1) != '/') then '/' else ''
 		filePath
 			.replace pathParams.base, ''
 			.replace process.cwd()+"/#{dirInGlob}", ''

@@ -1,8 +1,12 @@
 {
-  "name": "foreach-cli",
-  "version": "1.8.1",
+  "name": "relatively-better-foreach-cli",
+  "version": "1.0.0",
   "description": "CLI util to execute a command for each file matching a glob",
   "keywords": [
+    "parallel",
+    "glob",
+    "execution",
+    "script",
     "cli",
     "foreach",
     "each",
@@ -18,10 +22,10 @@
   "files": [
     "lib"
   ],
-  "author": "danielkalen",
+  "author": "danielalonsopardo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielkalen/foreach-cli"
+    "url": "https://github.com/DanielAlonsoPardo/relatively-better-foreach-cli"
   },
   "license": "MIT",
   "mocha_opts": "-u tdd -b --compilers coffee:coffee-register --slow 500 --timeout 3000 -R spec",
