@@ -1,5 +1,11 @@
 # foreach-cli
-CLI utility to execute a command for each file matching a glob. Originally a fork of [each-cli][https://www.npmjs.com/package/each-cli], but then completely rewritten in order to provoke simplicity and eliminate annoying bugs. It differs form the original mainly by setting the CWD (current working directory) to the directory the foreach command was executed from, as opposed to the original package's behavior which set the CWD to the matched file's directory. It also takes the command arguments as strings to allow more complex commands such as piping.
+CLI utility to execute a command for each file matching a glob. This is a fork of [foreach-cli][https://www.npmjs.com/package/foreach-cli], but the value of relDir is calculated better in order to make it more useful. 
+The "reldir" variable is taken from the glob specified: it takes up to the last directory before there is a "\*". So:
+```
+abc/123/**/*.js -> abc/123/
+abc/12*/**/*.js -> abc/
+abc -> abc/
+```
 
 
 Installation:
