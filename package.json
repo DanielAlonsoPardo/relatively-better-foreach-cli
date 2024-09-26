@@ -50,7 +50,7 @@
     "fs-extra": "^0.30.0",
     "istanbul": "^0.4.5",
     "lcov-parse": "0.0.10",
-    "mocha": "^3.0.2",
+    "mocha": "^10.7.3",
     "nodemon": "^1.8.1",
     "request": "^2.74.0",
     "svg2png": "^3.0.1"
