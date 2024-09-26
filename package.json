@@ -25,7 +25,7 @@
   "author": "danielalonsopardo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DanielAlonsoPardo/relatively-better-foreach-cli"
+    "url": "git+https://github.com/DanielAlonsoPardo/relatively-better-foreach-cli.git"
   },
   "license": "MIT",
   "mocha_opts": "-u tdd -b --compilers coffee:coffee-register --slow 500 --timeout 3000 -R spec",
